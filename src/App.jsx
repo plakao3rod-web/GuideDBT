@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
@@ -9,7 +9,7 @@ import Quiz from "./pages/Quiz.jsx";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="app">
         <nav className="navbar">
           <div className="logo">DBT GUIDE</div>
@@ -95,6 +95,6 @@ export default function App() {
           <Route path="/quiz" element={<Quiz />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
